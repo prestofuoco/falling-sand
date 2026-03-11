@@ -39,7 +39,10 @@ add_subdirectory(cmake/stm32cubemx)
 
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined library search paths
+    Core/Src/imu.c
+    Core/Src/led.c
+    Core/Src/is31fl3731.c
+    Core/Src/lsm6dso_reg.c
 )
 
 # Add sources to executable
